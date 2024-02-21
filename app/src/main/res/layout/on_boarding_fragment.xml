@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/slide1"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/slide_shape"
+            android:backgroundTint="@color/black" />
+
+        <View
+            android:id="@+id/slide2"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/slide_shape"
+            android:backgroundTint="#808080" />
+
+
+
+    </LinearLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nextbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_style"
+            android:text="Next-->"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/skipbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/btn_style"
+            android:backgroundTint="@color/white"
+            android:text="Skip"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
